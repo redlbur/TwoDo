@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		935B23E427EE57670030EDFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B23E327EE57670030EDFB /* AppDelegate.swift */; };
 		935B23E627EE57670030EDFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B23E527EE57670030EDFB /* SceneDelegate.swift */; };
-		935B23E827EE57670030EDFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B23E727EE57670030EDFB /* ViewController.swift */; };
+		935B23E827EE57670030EDFB /* TwoDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B23E727EE57670030EDFB /* TwoDoViewController.swift */; };
 		935B23EB27EE57670030EDFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935B23E927EE57670030EDFB /* Main.storyboard */; };
-		935B23EE27EE57670030EDFB /* TwoDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 935B23EC27EE57670030EDFB /* TwoDo.xcdatamodeld */; };
+		935B23EE27EE57670030EDFB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 935B23EC27EE57670030EDFB /* DataModel.xcdatamodeld */; };
 		935B23F027EE57680030EDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935B23EF27EE57680030EDFB /* Assets.xcassets */; };
 		935B23F327EE57680030EDFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935B23F127EE57680030EDFB /* LaunchScreen.storyboard */; };
+		935B23FE27EE72DA0030EDFB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B23FD27EE72DA0030EDFB /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		935B23E027EE57670030EDFB /* TwoDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		935B23E327EE57670030EDFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		935B23E527EE57670030EDFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		935B23E727EE57670030EDFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		935B23E727EE57670030EDFB /* TwoDoViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = TwoDoViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		935B23EA27EE57670030EDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		935B23ED27EE57670030EDFB /* TwoDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwoDo.xcdatamodel; sourceTree = "<group>"; };
 		935B23EF27EE57680030EDFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		935B23F227EE57680030EDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935B23F427EE57680030EDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935B23FD27EE72DA0030EDFB /* ListViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,39 @@
 			children = (
 				935B23E327EE57670030EDFB /* AppDelegate.swift */,
 				935B23E527EE57670030EDFB /* SceneDelegate.swift */,
-				935B23E727EE57670030EDFB /* ViewController.swift */,
-				935B23E927EE57670030EDFB /* Main.storyboard */,
+				935B23FC27EE5F660030EDFB /* Data Model */,
+				935B23FB27EE5F4B0030EDFB /* View */,
+				935B23FA27EE5F150030EDFB /* Controller */,
 				935B23EF27EE57680030EDFB /* Assets.xcassets */,
 				935B23F127EE57680030EDFB /* LaunchScreen.storyboard */,
 				935B23F427EE57680030EDFB /* Info.plist */,
-				935B23EC27EE57670030EDFB /* TwoDo.xcdatamodeld */,
 			);
 			path = TwoDo;
+			sourceTree = "<group>";
+		};
+		935B23FA27EE5F150030EDFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				935B23E727EE57670030EDFB /* TwoDoViewController.swift */,
+				935B23FD27EE72DA0030EDFB /* ListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		935B23FB27EE5F4B0030EDFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				935B23E927EE57670030EDFB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		935B23FC27EE5F660030EDFB /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				935B23EC27EE57670030EDFB /* DataModel.xcdatamodeld */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935B23E827EE57670030EDFB /* ViewController.swift in Sources */,
+				935B23E827EE57670030EDFB /* TwoDoViewController.swift in Sources */,
 				935B23E427EE57670030EDFB /* AppDelegate.swift in Sources */,
 				935B23E627EE57670030EDFB /* SceneDelegate.swift in Sources */,
-				935B23EE27EE57670030EDFB /* TwoDo.xcdatamodeld in Sources */,
+				935B23FE27EE72DA0030EDFB /* ListViewController.swift in Sources */,
+				935B23EE27EE57670030EDFB /* DataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,13 +394,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		935B23EC27EE57670030EDFB /* TwoDo.xcdatamodeld */ = {
+		935B23EC27EE57670030EDFB /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				935B23ED27EE57670030EDFB /* TwoDo.xcdatamodel */,
 			);
 			currentVersion = 935B23ED27EE57670030EDFB /* TwoDo.xcdatamodel */;
-			path = TwoDo.xcdatamodeld;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21D49" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Holder" representedClassName="Holder" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <relationship name="list" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="List" inverseName="parentHolder" inverseEntity="List"/>
+    </entity>
+    <entity name="List" representedClassName="List" syncable="YES" codeGenerationType="class">
+        <attribute name="done" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="item" optional="YES" attributeType="String"/>
+        <relationship name="parentHolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Holder" inverseName="list" inverseEntity="Holder"/>
+    </entity>
+    <elements>
+        <element name="List" positionX="46.30859375" positionY="-4.5078125" width="128" height="88"/>
+        <element name="Holder" positionX="-230.328125" positionY="19.9296875" width="128" height="73"/>
+    </elements>
+</model>
